@@ -45,7 +45,7 @@ namespace Receiver
             _logger.LogInformation("Hello world");
             if (_config != null) {
                 var connString = _config.GetConnectionString("MyConnection");
-                _logger.LogInformation($"Connection string: {connString == null}");
+                _logger.LogInformation($"Connection string null: {connString == null}");
             }
             return Task.CompletedTask;
         }
